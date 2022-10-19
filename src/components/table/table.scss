@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+.table{
+
+    .tableCell{
+    font-family: 'Nunito', sans-serif !important;
+    }
+
+    .cellWrapper{
+        display: flex;
+        align-items: center;
+
+        .image{
+            width: 104px;
+            height: 74px;
+            border-radius: 10%;
+            margin-right: 10px;
+            object-fit: cover;
+            cursor: pointer;
+        }
+    }
+
+    .status{
+        padding: 5px;
+        border-radius: 5px;
+
+        &.checked{
+            color: green;
+            background-color: rgba(0,128,0,0.151);
+            font-weight: 900;
+        }
+        &.notchecked{
+            color: red;
+            background-color: rgba(128, 0, 0, 0.151);
+            font-weight: 900;
+        }
+    }
+}
